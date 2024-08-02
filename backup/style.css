@@ -1,0 +1,100 @@
+@import url('../../.cache/wal/colors-waybar.css');
+
+
+@define-color bg @background;
+@define-color fg @foreground;
+@define-color textcolor @cursor;
+
+@define-color red1 #ac3132;
+
+#window {
+    background-color: @background;
+    background: transparent;
+    padding: 3px 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+
+window#waybar {
+    font-family: "JetBrainsMono NF";
+    color: rgba(225,225,225,1);
+    background-color: rgba(204, 11, 11, 0);
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modules-left{
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5) 30% ,rgba(0, 0, 0,0.5) 60%);
+    border-radius: 0.5rem;
+    padding: 5px 5px;
+    margin-left: 10;
+    border: 3px solid @red1;
+}
+
+.modules-right {
+    opacity: 1;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5) 30% ,rgba(0, 0, 0,0.5) 60%);
+    border-radius: 0.5rem;
+    padding: 2px;
+    border: 3px solid @red1;
+}
+
+.modules-center{
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, rgba(0,0,0,0.5) 30% ,rgba(0, 0, 0,0.5) 60%);
+    border: 3px solid @red1;
+}
+/* label.module {
+ *   margin-left: -1px;
+ } * */
+
+#workspaces {
+    background-color: @background;
+    border-radius: 0.5rem;
+    padding: 2px 2px;
+
+}
+
+#workspaces button {
+color: @foreground;
+font-size: 1.2rem;
+padding: 0 0.3rem 0 0;
+}
+
+
+
+#clock {
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 0 3px 0 0;
+    color: @red1;
+}
+
+#battery {
+color: lightgreen;
+}
+
+#memory {
+color: @color4;
+}
+
+#disk {
+color: @color5;
+}
+
+#cpu {
+color: @color6;
+}
+
+#temperature {
+color: lightslategray;
+}
+
+#backlight {
+    margin-left: 5px;
+}
+#custom-exit {
+    color: @red1;
+    margin-right: 10px;
+}
