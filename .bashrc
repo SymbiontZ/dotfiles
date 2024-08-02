@@ -8,9 +8,6 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-
-eval "$(starship init bash)"
-
 #Custom commands for easy use.
 alias pacman="sudo pacman"
 
